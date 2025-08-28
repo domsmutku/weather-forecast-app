@@ -1,0 +1,29 @@
+body {
+  background: #d6c8bb;
+}
+
+.container {
+  background: #5960ac;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+}
+
+main,
+footer {
+  color: #e0dbd0;
+  font-family: "Arimo", sans-serif;
+}
+
+h1 {
+  font-family: "Asimovian", sans-serif;
+  font-weight: 400;
+  font-size: 46px;
+}
+
+a {
+  font-weight: bolder;
+  color: #e8a335;
+}
