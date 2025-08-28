@@ -11,10 +11,23 @@ body {
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
 }
 
+header {
+  padding: 0 0 15px 0;
+}
+
 main,
 footer {
   color: #e0dbd0;
   font-family: "Arimo", sans-serif;
+}
+
+main {
+  font-size: 18px;
+}
+
+footer {
+  padding: 40px 0 0 0;
+  font-size: 16px;
 }
 
 h1 {
@@ -25,7 +38,6 @@ h1 {
 }
 
 a {
-  font-weight: bolder;
   color: #e8a335;
 }
 
@@ -34,6 +46,7 @@ a {
   font-size: 16px;
   border: 3px solid #494f8e;
   padding: 4px 5px 5px 5px;
+  width: 80%;
 }
 
 .submit-form-input {
