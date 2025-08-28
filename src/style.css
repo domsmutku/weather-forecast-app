@@ -21,9 +21,38 @@ h1 {
   font-family: "Asimovian", sans-serif;
   font-weight: 400;
   font-size: 46px;
+  margin: 5px 0px 0px 0px;
 }
 
 a {
   font-weight: bolder;
   color: #e8a335;
+}
+
+.search-form-input {
+  font-family: "Arimo", sans-serif;
+  font-size: 16px;
+  border: 3px solid #494f8e;
+  padding: 4px 5px 5px 5px;
+}
+
+.submit-form-input {
+  font-family: "Asimovian", sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  color: #494f8e;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+.submit-form-input:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
 }
