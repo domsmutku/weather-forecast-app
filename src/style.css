@@ -23,6 +23,7 @@ footer {
 
 main {
   font-size: 18px;
+  padding: 10px 0;
 }
 
 footer {
@@ -33,11 +34,12 @@ footer {
 h1 {
   font-family: "Asimovian", sans-serif;
   font-weight: 400;
-  font-size: 46px;
-  margin: 5px 0px 0px 0px;
+  font-size: 56px;
+  margin: 0px 0px 0px 0px;
 }
 
-a {
+a,
+strong {
   color: #e8a335;
 }
 
@@ -68,4 +70,30 @@ a {
   box-shadow: 0px 0px 0px 0px;
   top: 5px;
   left: 5px;
+}
+
+.weather-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.temperature-details {
+  display: flex;
+}
+
+.current-temperature {
+  font-family: "Asimovian", sans-serif;
+  font-weight: 400;
+  font-size: 68px;
+}
+
+.temperature-emoji {
+  font-size: 44px;
+  margin-top: 14px;
+  margin-right: 10px;
+}
+
+.weather-unit {
+  margin-top: 20px;
+  font-size: 26px;
 }
