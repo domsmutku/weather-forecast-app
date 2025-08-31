@@ -44,6 +44,12 @@ function searchCity(city) {
   axios.get(apiUrl).then(refreshWeather);
 }
 
+function chooseEmoji(emoticon) {
+  let emoticon = document.querySelector("#emoji");
+  if (response.data.condition.description === "sunny");
+  emoticon.innerHTML = "🌞";
+}
+
 function handleSearchSubmit(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#search-form-input");
