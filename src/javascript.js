@@ -47,11 +47,32 @@ function searchCity(city) {
 
 function chooseEmoji(response) {
   let emoticon = document.querySelector("#emoji");
-  if (response.data.condition.description === "sunny") {
+  if (response.data.condition.description === "clear sky") {
     emoticon.innerHTML = "🌞";
   }
-  if (response.data.condition.description === "drizzle") {
+  if (response.data.condition.description === "shower rain") {
     emoticon.innerHTML = "☔️";
+  }
+  if (response.data.condition.description === "few clouds") {
+    emoticon.innerHTML = "⛅";
+  }
+  if (response.data.condition.description === "scattered clouds") {
+    emoticon.innerHTML = "☁️";
+  }
+  if (response.data.condition.description === "broken clouds") {
+    emoticon.innerHTML = "🌥️";
+  }
+  if (response.data.condition.description === "rain") {
+    emoticon.innerHTML = "🌧️";
+  }
+  if (response.data.condition.description === "thunderstorm") {
+    emoticon.innerHTML = "⛈️";
+  }
+  if (response.data.condition.description === "snow") {
+    emoticon.innerHTML = "❄️";
+  }
+  if (response.data.condition.description === "mist") {
+    emoticon.innerHTML = "🌫️";
   }
 }
 
