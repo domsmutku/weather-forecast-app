@@ -14,6 +14,7 @@ function refreshWeather(response) {
   windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
   temperatureElement.innerHTML = Math.round(temperature);
   timeElement.innerHTML = formatDate(date);
+  chooseEmoji(response);
 }
 
 function formatDate(date) {
@@ -44,10 +45,14 @@ function searchCity(city) {
   axios.get(apiUrl).then(refreshWeather);
 }
 
-function chooseEmoji(emoticon) {
+function chooseEmoji(response) {
   let emoticon = document.querySelector("#emoji");
-  if (response.data.condition.description === "sunny");
-  emoticon.innerHTML = "🌞";
+  if (response.data.condition.description === "sunny") {
+    emoticon.innerHTML = "🌞";
+  }
+  if (response.data.condition.description === "drizzle") {
+    emoticon.innerHTML = "☔️";
+  }
 }
 
 function handleSearchSubmit(event) {
