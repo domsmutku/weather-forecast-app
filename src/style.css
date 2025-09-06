@@ -34,7 +34,7 @@ footer {
 h1 {
   font-family: "Asimovian", sans-serif;
   font-weight: 400;
-  font-size: 56px;
+  font-size: 64px;
   margin: 0px 0px 0px 0px;
 }
 
@@ -89,7 +89,7 @@ strong {
 
 .temperature-emoji {
   font-size: 44px;
-  margin-top: 14px;
+  margin-top: 10px;
   margin-right: 10px;
 }
 
@@ -101,7 +101,7 @@ strong {
 .weather-forecast {
   display: flex;
   justify-content: space-around;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .weather-forecast-date {
