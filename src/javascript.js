@@ -92,33 +92,32 @@ function formatDay(timestamp) {
 }
 
 function formatEmoji(response) {
-  let emojiIcon = document.querySelector(".weather-forecast-icon");
   if (response.daily.condition.description === "clear sky") {
-    emojiIcon.innerHTML = "🌞";
+    return "🌞";
   }
   if (response.daily.condition.description === "shower rain") {
-    emojiIcon.innerHTML = "☔️";
+    return "☔️";
   }
   if (response.daily.condition.description === "few clouds") {
-    emojiIcon.innerHTML = "⛅";
+    return "⛅";
   }
   if (response.daily.condition.description === "scattered clouds") {
-    emojiIcon.innerHTML = "☁️";
+    return "☁️";
   }
   if (response.daily.condition.description === "broken clouds") {
-    emojiIcon.innerHTML = "🌥️";
+    return "🌥️";
   }
   if (response.daily.condition.description === "rain") {
-    emojiIcon.innerHTML = "🌧️";
+    return "🌧️";
   }
   if (response.daily.condition.description === "thunderstorm") {
-    emojiIcon.innerHTML = "⛈️";
+    return "⛈️";
   }
   if (response.daily.condition.description === "snow") {
-    emojiIcon.innerHTML = "❄️";
+    return "❄️";
   }
   if (response.daily.condition.description === "mist") {
-    emojiIcon.innerHTML = "🌫️";
+    return "🌫️";
   }
 }
 
@@ -137,7 +136,7 @@ function displayForecast(response) {
         forecastHtml +
         `<div class="weather-forecast-day">
               <div class="weather-forecast-date">${formatDay(day.time)}</div>
-              <div class="weather-forecast-icon">${formatEmoji(response)}</div>
+              <div class="weather-forecast-icon">${formatEmoji(day)}</div>
               <div class="weather-forecast-temperatures">
                 <div class="weather-forecast-temperature">
                   <strong>${Math.round(day.temperature.maximum)}º</strong>
