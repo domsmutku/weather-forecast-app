@@ -49,31 +49,31 @@ function searchCity(city) {
 
 function chooseEmoji(response) {
   let emoticon = document.querySelector("#emoji");
-  if (response.data.condition.description === "clear sky") {
+  if (response.data.condition.icon.includes("clear-sky")) {
     emoticon.innerHTML = "🌞";
   }
-  if (response.data.condition.description === "shower rain") {
+  if (response.data.condition.icon.includes("shower-rain")) {
     emoticon.innerHTML = "☔️";
   }
-  if (response.data.condition.description === "few clouds") {
+  if (response.data.condition.icon.includes("few-clouds")) {
     emoticon.innerHTML = "⛅";
   }
-  if (response.data.condition.description === "scattered clouds") {
+  if (response.data.condition.icon.includes("scattered-clouds")) {
     emoticon.innerHTML = "☁️";
   }
-  if (response.data.condition.description === "broken clouds") {
+  if (response.data.condition.icon.includes("broken-clouds")) {
     emoticon.innerHTML = "🌥️";
   }
-  if (response.data.condition.description === "rain") {
+  if (response.data.condition.icon.includes("rain")) {
     emoticon.innerHTML = "🌧️";
   }
-  if (response.data.condition.description === "thunderstorm") {
+  if (response.data.condition.icon.includes("thunderstorm")) {
     emoticon.innerHTML = "⛈️";
   }
-  if (response.data.condition.description === "snow") {
+  if (response.data.condition.icon.includes("snow")) {
     emoticon.innerHTML = "❄️";
   }
-  if (response.data.condition.description === "mist") {
+  if (response.data.condition.icon.includes("mist")) {
     emoticon.innerHTML = "🌫️";
   }
 }
@@ -91,32 +91,32 @@ function formatDay(timestamp) {
   return days[date.getDay()];
 }
 
-function formatEmoji(response) {
-  if (response.daily.condition.description === "clear sky") {
+function formatEmoji(day) {
+  if (day.condition.icon.includes("clear-sky")) {
     return "🌞";
   }
-  if (response.daily.condition.description === "shower rain") {
+  if (day.condition.icon.includes("shower-rain")) {
     return "☔️";
   }
-  if (response.daily.condition.description === "few clouds") {
+  if (day.condition.icon.includes("few-clouds")) {
     return "⛅";
   }
-  if (response.daily.condition.description === "scattered clouds") {
+  if (day.condition.icon.includes("scattered-clouds")) {
     return "☁️";
   }
-  if (response.daily.condition.description === "broken clouds") {
+  if (day.condition.icon.includes("broken-clouds")) {
     return "🌥️";
   }
-  if (response.daily.condition.description === "rain") {
+  if (day.condition.icon.includes("rain")) {
     return "🌧️";
   }
-  if (response.daily.condition.description === "thunderstorm") {
+  if (day.condition.icon.includes("thunderstorm")) {
     return "⛈️";
   }
-  if (response.daily.condition.description === "snow") {
+  if (day.condition.icon.includes("snow")) {
     return "❄️";
   }
-  if (response.daily.condition.description === "mist") {
+  if (day.condition.icon.includes("mist")) {
     return "🌫️";
   }
 }
