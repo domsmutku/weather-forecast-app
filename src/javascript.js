@@ -83,6 +83,12 @@ function handleSearchSubmit(event) {
   searchCity(searchInput.value);
 }
 
+function getForecast(city) {
+  let apiKey = "83a222ot49ddfde0622ffadcc7bfbdb5";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios(apiUrl).then(displayForecast);
+}
+
 function displayForecast() {
   let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
   let forecastHtml = "";
@@ -110,4 +116,4 @@ let searchFormDocument = document.querySelector("#search-form");
 searchFormDocument.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Wrocław");
-displayForecast();
+getForecast("Wrocław");
